@@ -4,3 +4,25 @@
     align-items: center;
     height: 90vh;
 }
+
+.drawer {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(81, 160, 245);
+    box-shadow: -1px 0 2px rgba(0, 0, 0, 0.3);
+    transition: right 0.5s ease;
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: rgb(255, 255, 255);
+}
+
+.drawer.open {
+    right: 0;
+}
